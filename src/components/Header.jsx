@@ -6,14 +6,10 @@ export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const menuItems = [
-        "Profile",
-        "Dashboard",
-        "Activity",
-        "Analytics",
-        "System",
-        "Deployments",
-        "My Settings",
-        "Team Settings",
+        "Rockets",
+        "Explore",
+        "Planets",
+        "Meet the Crew",
         "Help & Feedback",
         "Log Out",
     ];
@@ -41,26 +37,26 @@ export default function Header() {
 
                 <NavbarContent className="hidden sm:flex gap-4" justify="center">
                     <NavbarItem className='mx-4'>
-                        <Link isActive aria-current="page" href="#" className='font-medium'>
+                        <Link aria-current="page" href="#" className='font-medium'>
                             Rockets
                         </Link>
                     </NavbarItem>
 
                     <NavbarItem className='mx-4'>
                         <Link href="#"  className='text-gray-100 font-[300]' >
-                            Concept
-                        </Link>
-                    </NavbarItem>
-
-                    <NavbarItem className='mx-4'>
-                        <Link className='text-gray-100 font-[300]' href="#">
                             Explore
                         </Link>
                     </NavbarItem>
 
                     <NavbarItem className='mx-4'>
                         <Link className='text-gray-100 font-[300]' href="#">
-                            Planet
+                            Planets
+                        </Link>
+                    </NavbarItem>
+
+                    <NavbarItem className='mx-4'>
+                        <Link className='text-gray-100 font-[300]' href="#">
+                            Meet the Crew
                         </Link>
                     </NavbarItem>
                 </NavbarContent>
@@ -77,16 +73,16 @@ export default function Header() {
                     </NavbarItem>
                 </NavbarContent>
 
-                <NavbarMenu>
+                <NavbarMenu className='bg-[conic-gradient(at_bottom_right,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black'>
                     {menuItems.map((item, index) => (
                         <NavbarMenuItem key={`${item}-${index}`}>
                             <Link
-                                color={
-                                    index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
-                                }
-                                className="w-full"
+                                // color={
+                                //     index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
+                                // }
+                                className="w-full text-gray-300"
                                 href="#"
-                                size="lg"
+                                size="base"
                             >
                                 {item}
                             </Link>

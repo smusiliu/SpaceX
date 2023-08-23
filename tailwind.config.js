@@ -9,7 +9,17 @@ export default {
         "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
     ],
     theme: {
-        extend: {},
+        extend: {
+            // screens: {
+            //     lg: { max: '1800px' },
+            //     llg: { max: '1285px' },
+            //     md: { max: '990px' },
+            //     // md - 
+            //     sm: { max: '600px' },
+            //     // sm - 640
+            //     xs: { max: '400px' },
+            // },
+        },
     },
     plugins: [nextui()]
 }
