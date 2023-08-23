@@ -1,11 +1,11 @@
-import Header from "./components/Header"
+import { Header, Hero } from "./components"
 
 
 function App() {
     return (
-        <div className=''>
+        <div className='bg-[conic-gradient(at_bottom_right,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black min-h-screen'>
             <Header />
-            <h1 className='text-3xl text-gray-950 font-semibold'> SpaceX Project </h1>
+            <Hero />
         </div>
     )
 }
