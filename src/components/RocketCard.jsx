@@ -9,8 +9,8 @@ const RocketCard = ({ rocket }) => {
     }
 
     return (
-        <div className=''>
-            <Card shadow="md" isPressable onPress={() => console.log("item pressed")} className='backdrop-blur-sm bg-gray-900/40'>
+        <div className='w-full'>
+            <Card shadow="md" isPressable onPress={() => console.log("item pressed")} className='backdrop-blur-sm bg-gray-900/40 w-full'>
                 <CardBody className="overflow-visible p-0">
                     <Image
                         shadow="md"
@@ -30,7 +30,7 @@ const RocketCard = ({ rocket }) => {
                 <Button
                     variant="flat"
                     onPress={() => handleOpen()}
-                    className="capitalize text-[0.78rem] text-gray-300 w-full mt-3 backdrop-blur-sm bg-gray-900/40"
+                    className="capitalize text-[0.78rem] text-gray-300 w-full mt-3 backdrop-blur-sm bg-gray-900/30"
                 >
                     More Details
                 </Button>
